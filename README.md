@@ -1,2 +1,2 @@
 # Nutstagram-Week-2
-A starter Xcode project for people who missed week #1.
+This is the completed state of Nutstagram for Week #2.
