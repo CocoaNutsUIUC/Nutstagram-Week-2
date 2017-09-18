@@ -30,7 +30,8 @@ struct Post {
     // MARK: Properties
     
     public let author: User
-    public let image: UIImage
+    public let imageURL: URL
+    public var image: UIImage?
     public var numLikes: Int
     public let comments: [String]
 
@@ -40,9 +41,17 @@ struct Post {
     
     // MARK: Initializer
     
-    init(author: User, image: UIImage, numLikes: Int, comments: [String]) {
+//    init(author: User, image: UIImage, numLikes: Int, comments: [String]) {
+//        self.author = author
+//        self.image = resize(image: image)
+//        self.numLikes = numLikes
+//        self.comments = comments
+//        self.isLiked = false
+//    }
+    
+    init(author: User, imageURL: URL, numLikes: Int, comments: [String]) {
         self.author = author
-        self.image = resize(image: image)
+        self.imageURL = imageURL
         self.numLikes = numLikes
         self.comments = comments
         self.isLiked = false
